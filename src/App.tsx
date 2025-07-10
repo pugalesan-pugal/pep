@@ -8,6 +8,9 @@ import HighlightCards from './components/HighlightCards';
 import PhotoGallery from './components/PhotoGallery';
 import WhyAttend from './components/WhyAttend';
 import CountdownTimer from './components/CountdownTimer';
+import stjosephsLogo from './assets/Stjosephs.png';
+import rpaLogo from './assets/rpa.png';
+import uipaLogo from './assets/uipa.png';
 
 function App() {
   return (
@@ -22,6 +25,45 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
+            {/* Institutional Logos */}
+            <motion.div 
+              className="flex justify-center items-center gap-8 mb-12 flex-wrap"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <motion.img
+                src={stjosephsLogo}
+                alt="St. Joseph's College of Engineering"
+                className="h-20 object-contain"
+                whileHover={{ scale: 1.05 }}
+              />
+              <motion.div className="h-12 w-px bg-purple-500/30" />
+              <motion.img
+                src={rpaLogo}
+                alt="RPA Society"
+                className="h-20 object-contain"
+                whileHover={{ scale: 1.05 }}
+              />
+              <motion.div className="h-12 w-px bg-purple-500/30" />
+              <div className="flex flex-col items-center gap-2">
+                <motion.p
+                  className="text-sm font-medium text-purple-400"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.4 }}
+                >
+                  In Association With
+                </motion.p>
+                <motion.img
+                  src={uipaLogo}
+                  alt="UiPath Community"
+                  className="h-12 object-contain"
+                  whileHover={{ scale: 1.05 }}
+                />
+              </div>
+            </motion.div>
+
             <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight" style={{ fontFamily: 'Orbitron, monospace' }}>
               <div className="text-orange-500">
                 <GlitchText text="Student Developers Summit" />
@@ -172,7 +214,7 @@ function App() {
                 TO RISE
               </h3>
               <p className="text-gray-300">
-                A national-level technical event bringing together RPA enthusiasts, industry experts, and students.
+                A technical event bringing together RPA enthusiasts, industry experts, and students.
               </p>
             </div>
             
