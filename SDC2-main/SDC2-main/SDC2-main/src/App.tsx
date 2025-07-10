@@ -27,7 +27,7 @@ function App() {
           >
             {/* Institutional Logos */}
             <motion.div 
-              className="flex justify-center items-center gap-8 mb-6 flex-wrap"
+              className="flex justify-center items-center gap-8 mb-12 flex-wrap"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -62,21 +62,6 @@ function App() {
                   whileHover={{ scale: 1.05 }}
                 />
               </div>
-            </motion.div>
-
-            {/* Presents Text */}
-            <motion.div
-              className="mb-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <motion.p 
-                className="text-lg text-purple-300 italic font-normal"
-                whileHover={{ scale: 1.05 }}
-              >
-                Presents
-              </motion.p>
             </motion.div>
 
             <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight" style={{ fontFamily: 'Orbitron, monospace' }}>
