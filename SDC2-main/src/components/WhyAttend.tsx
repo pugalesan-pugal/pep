@@ -4,26 +4,26 @@ import { Network, PenTool as Tool, Award, Gift } from 'lucide-react';
 
 const benefits = [
   {
-    title: 'Network with Leads',
-    description: 'Connect with industry leaders',
+    title: 'Network with the Best',
+    description: 'Engage with top tech minds and UiPath experts',
     icon: Network,
     color: 'text-purple-400'
   },
   {
-    title: 'Hands-on RPA Experience',
-    description: 'Learn practical automation skills through workshops',
+    title: 'Real RPA Experience',
+    description: 'Real RPA Experience',
     icon: Tool,
     color: 'text-blue-400'
   },
   {
-    title: 'National Recognition',
-    description: 'Gain exposure and recognition',
+    title: 'Showcase Your Talent',
+    description: 'Earn spotlight and recognition on a national scale',
     icon: Award,
     color: 'text-yellow-400'
   },
   {
     title: 'Chennai Vibes',
-    description: 'Insta-Worthy Chennai Vibes',
+    description: 'Where Tech Gets Trendy – Only in Singara Chennai',
     icon: Gift,
     color: 'text-green-400'
   }

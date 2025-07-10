@@ -1,16 +1,31 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import s4 from '../assets/s4.jpg';
+import s1 from '../assets/s1.jpg';
 import s2 from '../assets/s2.jpg';
 import s3 from '../assets/s3.jpg';
-import s1 from '../assets/s1.jpg';
+import s4 from '../assets/s4.jpg';
+import s5 from '../assets/s5.jpg';
+import s6 from '../assets/s6.jpg';
+import s7 from '../assets/s7.jpg';
+import s9 from '../assets/s9.jpg';
+import s10 from '../assets/s10.jpg';
+import s11 from '../assets/s11.jpg';
+import s12 from '../assets/s12.jpg';
+import s13 from '../assets/s13.jpg';
 
 const galleryImages = [
-  s4,
+  s13,
+  s1,
   s2,
   s3,
-  s1,
+  s5,
+  s6,
+  s7,
+  s9,
+  s10,
+  s11,
+  s12
 ];
 
 const PhotoGallery: React.FC = () => {
@@ -71,7 +86,7 @@ const PhotoGallery: React.FC = () => {
           </div>
           
           {/* Thumbnails */}
-          <div className="flex justify-center mt-6 space-x-2">
+          <div className="flex justify-center mt-6 gap-2 flex-wrap">
             {galleryImages.map((image, index) => (
               <motion.button
                 key={index}
