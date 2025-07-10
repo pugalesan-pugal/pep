@@ -16,6 +16,7 @@ import s13 from '../assets/s13.jpg';
 
 const galleryImages = [
   s13,
+  s1,
   s2,
   s3,
   s5,
