@@ -80,11 +80,34 @@ const facultyTimelineData: TimelineEvent[] = [
     emoji: '🤖' 
   },
   { time: '12:30 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
-  { time: '2:15 PM', title: 'Campus to Corporate', icon: Mic, emoji: '📊' },
-  { time: '2:35 PM', title: 'Designing a Community Growth Plan', icon: Users, emoji: '🤝' },
-  { time: '3:20 PM', title: 'Build a Bot Workshop', icon: Users, emoji: '📐' },
-  { time: '4:05 PM', title: 'Faculty Champion Stories', icon: Users, emoji: '🌟' },
-  { time: '4:30 PM', title: 'Group Photos', icon: Users, emoji: '👋' }
+  { 
+    time: '14:15', 
+    title: 'Campus to Corporate: Role of tech communities in highlighting job readiness', 
+    speaker: 'Ghanashyam - UiPath Professional',
+    icon: Mic, 
+    emoji: '📊',
+  },
+  { 
+    time: '14:35', 
+    title: 'Designing a Community Growth Plan for campuses', 
+    speaker: 'Ghanashyam - UiPath Professional',
+    icon: Users, 
+    emoji: '🤝',
+  },
+  { 
+    time: '15:20', 
+    title: 'Build a Bot Workshop', 
+    speaker: 'Bhuvaneswaran B',
+    icon: Bot, 
+    emoji: '🔧',
+  },
+  { 
+    time: '16:05', 
+    title: 'Faculty Champion Stories', 
+    speaker: '',
+    icon: Users, 
+    emoji: '🌟',
+  }
 ];
 
 const Timeline: React.FC = () => {
