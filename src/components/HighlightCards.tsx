@@ -4,31 +4,31 @@ import { Mic, Bot, Camera, Wrench } from 'lucide-react';
 
 const highlights = [
   {
-    title: 'Entrepreneur Talk',
+    title: 'Entrepreneurial Talks',
     description: 'Vision. Action. Impact. Legacy',
     icon: Mic,
-    emoji: '🎙️',
+    emoji: '',
     color: 'from-purple-600 to-pink-600'
   },
   {
-    title: ' Networking',
+    title: 'Networking & Brainstorming',
     description: 'Connect. Collaborate. Share. Grow',
     icon: Bot,
-    emoji: '🤖',
+    emoji: '',
     color: 'from-blue-600 to-purple-600'
   },
   {
-    title: 'Workshop',
+    title: '⁠AI Agent Building Workshop',
     description: 'Learn. Apply. Innovate. Repeat',
     icon: Camera,
-    emoji: '🎬',
+    emoji: '',
     color: 'from-pink-600 to-red-600'
   },
   {
-    title: 'Student Developers & Faculties Story',
+    title: 'Student Developers * Faculties Masterclass',
     description: 'Inspire. Learn. Build. Lead',
     icon: Wrench,
-    emoji: '🔧',
+    emoji: '',
     color: 'from-green-600 to-blue-600'
   }
 ];

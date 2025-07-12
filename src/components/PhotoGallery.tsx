@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import s1 from '../assets/s1.jpg';
@@ -30,13 +30,32 @@ const galleryImages = [
 
 const PhotoGallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+
+  useEffect(() => {
+    let intervalId: number;
+    
+    if (isAutoPlaying) {
+      intervalId = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
+      }, 3000); // Change slide every 3 seconds
+    }
+
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
+  }, [isAutoPlaying]);
 
   const nextImage = () => {
     setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
+    setIsAutoPlaying(false); // Pause auto-play when manually navigating
   };
 
   const prevImage = () => {
     setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+    setIsAutoPlaying(false); // Pause auto-play when manually navigating
   };
 
   return (
@@ -55,7 +74,11 @@ const PhotoGallery: React.FC = () => {
         
         <div className="relative">
           {/* Main carousel */}
-          <div className="relative h-96 md:h-[500px] overflow-hidden rounded-xl">
+          <div 
+            className="relative h-96 md:h-[500px] overflow-hidden rounded-xl"
+            onMouseEnter={() => setIsAutoPlaying(false)}
+            onMouseLeave={() => setIsAutoPlaying(true)}
+          >
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentIndex}
@@ -83,6 +106,11 @@ const PhotoGallery: React.FC = () => {
             >
               <ChevronRight className="w-6 h-6" />
             </button>
+
+            {/* Auto-play indicator */}
+            <div className="absolute bottom-4 right-4 text-white text-sm bg-black/50 px-3 py-1 rounded-full">
+              {isAutoPlaying ? 'Auto-playing' : 'Paused'}
+            </div>
           </div>
           
           {/* Thumbnails */}

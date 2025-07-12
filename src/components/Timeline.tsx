@@ -1,21 +1,60 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Clock, Users, Mic, Bot, Camera, Wrench } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 
-const studentTimelineData = [
+interface TimelineEvent {
+  time: string;
+  title: string;
+  icon: LucideIcon;
+  emoji: string;
+  speaker?: string;
+}
+
+const studentTimelineData: TimelineEvent[] = [
   { time: '7:00 AM', title: 'Registration & Breakfast', icon: Users, emoji: '🎯' },
   { time: '9:00 AM', title: 'Inauguration and Keynotes', icon: Users, emoji: '🏆' },
-  { time: '9:30 AM', title: 'Entrepreneur Talk', icon: Users, emoji: '🎤' },
-  { time: '10:00 AM', title: 'HR Talk', icon: Users, emoji: '🎙️' },
+  { 
+    time: '9:30 AM', 
+    title: 'From Code to CEO', 
+    speaker: 'Venkatesh K - Founder & CEO, Collective Minds Digital Solution',
+    icon: Users, 
+    emoji: '🎤' 
+  },
+  { 
+    time: '10:00 AM', 
+    title: 'The story beyond Resume', 
+    speaker: 'Swathi Sushilan - Senior Talent Acquisition Partner, UiPath',
+    icon: Users, 
+    emoji: '🎙️' 
+  },
   { time: '10:30 AM', title: 'Break', icon: Clock, emoji: '☕' },
-  { time: '11:00 AM', title: 'RPA + AI + Agentic Ecosystem', icon: Bot, emoji: '🤖' },
-  { time: '1:00 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
-  { time: '2:15 PM', title: 'Workshop', icon: Wrench, emoji: '🔧' },
-  { time: '4:00 PM', title: 'Student Champions Stories + Awards', icon: Users, emoji: '🎉' },
-  { time: '4:30 PM', title: 'Storytelling & Group Photos', icon: Users, emoji: '👋' },
+  { 
+    time: '11:00 AM', 
+    title: 'The Origin Story of Agentic AI', 
+    speaker: 'Mukesh Kala - Hyper Automation Practice Head - Boundaryless Group, UiPath MVP\nNithin M Krishna - Senior Lead, Automation COE at KLA, UiPath MVP',
+    icon: Bot, 
+    emoji: '🤖' 
+  },
+  { time: '12:30 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
+  { 
+    time: '13:45 PM', 
+    title: 'Build Your First Agent Workshop', 
+    speaker: 'Palaniyappan P - Technical Architect at Novo Nordisk, UiPath MVP\nJobin T J - Automation Solution Architect, WonderBotz, UiPath MVP',
+    icon: Wrench, 
+    emoji: '🔧' 
+  },
+  { time: '15:30 PM', title: 'Student Community Showcase', icon: Users, emoji: '🎉' },
+  { 
+    time: '16:15 PM', 
+    title: 'Telling a compelling story - Masterclass', 
+    speaker: 'Rohit Radhakrishnan - UiPath Community Lead - Asia Pacific & Japan',
+    icon: Users, 
+    emoji: '✨' 
+  }
 ];
 
-const facultyTimelineData = [
+const facultyTimelineData: TimelineEvent[] = [
   { time: '7:00 AM', title: 'Registration & Breakfast', icon: Users, emoji: '🎯' },
   { time: '9:00 AM', title: 'Inauguration and Keynotes', icon: Users, emoji: '🏆' },
   { time: '9:30 AM', title: 'Entrepreneur Talk', icon: Users, emoji: '🎤' },
@@ -133,7 +172,10 @@ const Timeline: React.FC = () => {
                         <span className="text-2xl mr-3">{event.emoji}</span>
                         <h3 className="text-xl font-semibold text-white">{event.title}</h3>
                       </div>
-                      <p className="text-purple-300 font-mono">{event.time}</p>
+                      {event.speaker && (
+                        <p className="text-gray-300 text-sm mt-2 whitespace-pre-line">{event.speaker}</p>
+                      )}
+                      <p className="text-purple-300 font-mono mt-2">{event.time}</p>
                     </motion.div>
                   </div>
                   

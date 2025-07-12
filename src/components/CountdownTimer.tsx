@@ -10,7 +10,7 @@ const CountdownTimer: React.FC = () => {
   });
 
   useEffect(() => {
-    const eventDate = new Date('2025-08-08T07:00:00');
+    const eventDate = new Date('2025-08-08T08:00:00');
     
     const timer = setInterval(() => {
       const now = new Date();
