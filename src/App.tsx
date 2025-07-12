@@ -193,50 +193,107 @@ function App() {
       </motion.section>
 
       {/* Event Details */}
-      <motion.section 
-        className="py-20 px-4 relative z-10"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={staggerContainer}
-      >
+      <section className="py-20 px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <motion.h2
+          <h2
             className="text-4xl md:text-5xl font-bold text-center mb-16 text-white"
-            variants={fadeInUp}
             style={{ fontFamily: 'Orbitron, monospace' }}
           >
             Event Details
-          </motion.h2>
+          </h2>
           
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-            variants={staggerContainer}
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: Calendar, title: 'Date', value: 'August 8, 2025' },
-              { icon: MapPin, title: 'Venue', value: 'St. Joseph\'s College of Engineering, Chennai' },
-              { icon: Users, title: 'Organized by', value: 'St. Joseph\'s RPA Society' },
-              { icon: ExternalLink, title: 'Association with', value: ' UiPath Community' }
+              { 
+                icon: Calendar, 
+                title: 'Date', 
+                value: 'August 8, 2025',
+                delay: 0
+              },
+              { 
+                icon: MapPin, 
+                title: 'Venue', 
+                value: 'St. Joseph\'s College of Engineering, Chennai',
+                delay: 0.1
+              },
+              { 
+                icon: Users, 
+                title: 'Organized by', 
+                value: 'St. Joseph\'s RPA Society',
+                delay: 0.2
+              },
+              { 
+                icon: ExternalLink, 
+                title: 'Association with', 
+                value: ' UiPath Community',
+                delay: 0.3
+              }
             ].map((detail, index) => (
               <motion.div
                 key={index}
                 className="bg-gradient-to-br from-purple-900/30 to-black/30 backdrop-blur-sm border border-purple-500/30 rounded-xl p-6 text-center hover:border-purple-400 transition-all duration-300"
-                variants={fadeInUp}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ 
+                  opacity: 1, 
+                  y: 0,
+                  transition: {
+                    duration: 0.5,
+                    delay: detail.delay
+                  }
+                }}
+                viewport={{ once: true }}
                 whileHover={{ 
-                  scale: 1.05, 
-                  y: -5,
-                  transition: { type: "spring", stiffness: 400, damping: 10 }
+                  scale: 1.02,
+                  transition: {
+                    duration: 0.2,
+                    ease: "easeOut"
+                  }
                 }}
               >
-                <detail.icon className="w-12 h-12 mx-auto mb-4 text-purple-400" />
-                <h3 className="text-lg font-semibold mb-2 text-white">{detail.title}</h3>
-                <p className="text-gray-300">{detail.value}</p>
+                <motion.div
+                  initial={{ scale: 0.8 }}
+                  whileInView={{ 
+                    scale: 1,
+                    transition: {
+                      duration: 0.3,
+                      delay: detail.delay + 0.2
+                    }
+                  }}
+                  viewport={{ once: true }}
+                  whileHover={{ 
+                    rotate: [0, -5, 5, 0],
+                    transition: {
+                      duration: 0.5,
+                      ease: "easeInOut"
+                    }
+                  }}
+                >
+                  <detail.icon className="w-12 h-12 mx-auto mb-4 text-purple-400" />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ 
+                    opacity: 1,
+                    transition: {
+                      duration: 0.3,
+                      delay: detail.delay + 0.3
+                    }
+                  }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-lg font-semibold mb-2 text-white">
+                    {detail.title}
+                  </h3>
+                  <p className="text-gray-300">
+                    {detail.value}
+                  </p>
+                </motion.div>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* Timeline */}
       <motion.div
