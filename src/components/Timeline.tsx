@@ -57,16 +57,34 @@ const studentTimelineData: TimelineEvent[] = [
 const facultyTimelineData: TimelineEvent[] = [
   { time: '7:00 AM', title: 'Registration & Breakfast', icon: Users, emoji: '🎯' },
   { time: '9:00 AM', title: 'Inauguration and Keynotes', icon: Users, emoji: '🏆' },
-  { time: '9:30 AM', title: 'Entrepreneur Talk', icon: Users, emoji: '🎤' },
-  { time: '10:00 AM', title: 'HR Talk', icon: Users, emoji: '🎙️' },
+  { 
+    time: '9:30 AM', 
+    title: 'From Code to CEO', 
+    speaker: 'Venkatesh K - Founder & CEO, Collective Minds Digital Solution',
+    icon: Users, 
+    emoji: '🎤' 
+  },
+  { 
+    time: '10:00 AM', 
+    title: 'The story beyond Resume', 
+    speaker: 'Swathi Sushilan - Senior Talent Acquisition Partner, UiPath',
+    icon: Users, 
+    emoji: '🎙️' 
+  },
   { time: '10:30 AM', title: 'Break', icon: Clock, emoji: '☕' },
-  { time: '11:00 AM', title: 'RPA + AI + Agentic Ecosystem', icon: Bot, emoji: '🤖' },
-  { time: '1:00 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
+  { 
+    time: '11:00 AM', 
+    title: 'The Origin Story of Agentic AI', 
+    speaker: 'Mukesh Kala - Hyper Automation Practice Head - Boundaryless Group, UiPath MVP\nNithin M Krishna - Senior Lead, Automation COE at KLA, UiPath MVP',
+    icon: Bot, 
+    emoji: '🤖' 
+  },
+  { time: '12:30 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
   { time: '2:15 PM', title: 'Campus to Corporate', icon: Mic, emoji: '📊' },
   { time: '2:35 PM', title: 'Designing a Community Growth Plan', icon: Users, emoji: '🤝' },
   { time: '3:20 PM', title: 'Build a Bot Workshop', icon: Users, emoji: '📐' },
   { time: '4:05 PM', title: 'Faculty Champion Stories', icon: Users, emoji: '🌟' },
-  { time: '4:30 PM', title: 'Group Photos', icon: Users, emoji: '👋' },
+  { time: '4:30 PM', title: 'Group Photos', icon: Users, emoji: '👋' }
 ];
 
 const Timeline: React.FC = () => {
