@@ -83,14 +83,14 @@ const facultyTimelineData: TimelineEvent[] = [
   { 
     time: '14:15', 
     title: 'Campus to Corporate: Role of tech communities in highlighting job readiness', 
-    speaker: 'Ghanashyam - UiPath Professional',
+    speaker: 'Ghanashyam - Founder @ Edler Hub ',
     icon: Mic, 
     emoji: '📊',
   },
   { 
     time: '14:35', 
     title: 'Designing a Community Growth Plan for campuses', 
-    speaker: 'Ghanashyam - UiPath Professional',
+    speaker: 'Ghanashyam - Founder @ Edler Hub',
     icon: Users, 
     emoji: '🤝',
   },

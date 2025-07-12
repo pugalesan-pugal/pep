@@ -30,7 +30,7 @@ const speakers: Speaker[] = [
   },
   {
     name: 'Ghanashyam',
-    role: 'UiPath Professional',
+    role: 'Founder @ Edler Hub',
     image: './speakers/ghanshyam.jpg',
     linkedin: 'https://www.linkedin.com/in/ghanashyam/'
   },
