@@ -154,7 +154,7 @@ function App() {
               variants={fadeInUp}
             >
               <p className="text-red-200">
-                <span className="font-semibold text-red-300">Registration Ends on </span> July 20, 2025
+                <span className="font-semibold text-red-300">Registration Ends on </span> July 25, 2025
               </p>
             </motion.div>
 
