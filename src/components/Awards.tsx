@@ -22,7 +22,7 @@ const awardCategories: AwardCategory[] = [
   {
     platform: 'X Award',
     icon: Twitter,
-    description: 'Craft impactful and engaging content that sparks conversations on X (formerly Twitter).'
+    description: 'Craft impactful and engaging content that sparks conversations on X'
   }
 ];
 
