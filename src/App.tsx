@@ -9,6 +9,7 @@ import PhotoGallery from './components/PhotoGallery';
 import WhyAttend from './components/WhyAttend';
 import CountdownTimer from './components/CountdownTimer';
 import Speakers from './components/Speakers';
+import Awards from './components/Awards';
 import stjosephsLogo from './assets/Stjosephs.png';
 import rpaLogo from './assets/rpa.png';
 import uipaLogo from './assets/uipa.png';
@@ -140,7 +141,7 @@ function App() {
             className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto"
             variants={fadeInUp}
           >
-            Namma Chennai ! Namma Automation !
+            Namma Chennai ! Namma Agentic Automation !
           </motion.p>
           
           <motion.div
@@ -323,6 +324,16 @@ function App() {
         variants={fadeInUp}
       >
         <Speakers />
+      </motion.div>
+
+      {/* Awards Section */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={fadeInUp}
+      >
+        <Awards />
       </motion.div>
 
       {/* Photo Gallery */}

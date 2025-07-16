@@ -10,8 +10,8 @@ const benefits = [
     color: 'text-purple-400'
   },
   {
-    title: 'Real RPA Experience',
-    description: 'Real RPA Experience',
+    title: 'Real Agentic Experience',
+    description: 'Unlock your Agent Building Skills',
     icon: Tool,
     color: 'text-blue-400'
   },
