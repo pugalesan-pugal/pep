@@ -25,7 +25,6 @@ const awardCategories: AwardCategory[] = [
     description: 'Craft impactful and engaging content that sparks conversations on X'
   }
 ];
-
 const containerVariants: Variants = {
   hidden: { 
     opacity: 0 
