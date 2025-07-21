@@ -57,6 +57,12 @@ const speakers: Speaker[] = [
     role: 'Automation Solution Architect, WonderBotz, UiPath MVP',
     image: './speakers/jobin.jpg',
     linkedin: 'https://www.linkedin.com/in/jobin-joy/'
+  },
+  {
+    name: 'Bhuvaneswaran B',
+    role: 'Assistant Professor at Rajalakshmi Engineering College',
+    image: './speakers/Bhuveneshwar.jpeg',
+    linkedin: 'https://www.linkedin.com/in/bhuvaneswaranrec/'
   }
 ];
 
@@ -110,7 +116,7 @@ const Speakers: React.FC = () => {
         </motion.h2>
 
         <motion.div 
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8"
+          className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
