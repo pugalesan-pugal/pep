@@ -59,10 +59,22 @@ const speakers: Speaker[] = [
     linkedin: 'https://www.linkedin.com/in/jobin-joy/'
   },
   {
-    name: 'Bhuvaneswaran B',
+    name: 'Bhuveneshwar',
     role: 'Assistant Professor at Rajalakshmi Engineering College',
     image: './speakers/Bhuveneshwar.jpeg',
     linkedin: 'https://www.linkedin.com/in/bhuvaneswaranrec/'
+  },
+  {
+    name: 'Teena Cobb',
+    role: 'Senior HR Executive, qBotica',
+    image: './speakers/teena.jpg',
+    linkedin: 'https://www.linkedin.com/in/teena-cobb-/'
+  },
+  {
+    name: 'Rajitha Sai',
+    role: 'RPA Developer, qBotica',
+    image: './speakers/rajitha.jpg',
+    linkedin: 'https://www.linkedin.com/in/rajitha-sai/'
   }
 ];
 
