@@ -12,7 +12,7 @@ interface Speaker {
 const speakers: Speaker[] = [
   {
     name: 'Venkatesh K',
-    role: 'Founder & CEO, Collective Minds Digital Solution',
+    role: 'Founder & CEO Collective Minds Digital Solution',
     image: './speakers/venkatesh.jpg',
     linkedin: 'https://www.linkedin.com/in/venkateshkothandaraman/'
   },
@@ -59,7 +59,7 @@ const speakers: Speaker[] = [
     linkedin: 'https://www.linkedin.com/in/jobin-joy/'
   },
   {
-    name: 'Bhuveneshwar',
+    name: 'Bhuveneshwaran B',
     role: 'Assistant Professor at Rajalakshmi Engineering College',
     image: './speakers/Bhuveneshwar.jpeg',
     linkedin: 'https://www.linkedin.com/in/bhuvaneswaranrec/'
