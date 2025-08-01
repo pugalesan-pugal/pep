@@ -44,8 +44,17 @@ const studentTimelineData: TimelineEvent[] = [
     icon: Wrench, 
     emoji: '🔧' 
   },
-  { time: '15:30 PM', title: 'Student Community Showcase', icon: Users, emoji: '🎉' },
-  { 
+  {
+  time: '15:30 PM',
+  title: 'Student Community Showcase',
+  speaker: `St. Joseph's Group of Institutions - Sahastrajit, Pugalesan
+Rajalakshmi College of Engineering - Ajitha, Praveen, Ujjain
+Panimalar Engineering College - Bharath V, Shahanaaz S, Janavi Sree R, Sahana M`,
+  icon: Users,
+  emoji: '🎉'
+}
+
+,{ 
     time: '16:15 PM', 
     title: 'Telling a compelling story - Masterclass', 
     speaker: 'Rohit Radhakrishnan - UiPath Community Lead - Asia Pacific & Japan',
