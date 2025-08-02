@@ -28,12 +28,7 @@ const speakers: Speaker[] = [
     image: './speakers/swati.jpg',
     linkedin: 'https://www.linkedin.com/in/swathi08/'
   },
-  {
-    name: 'Ghanashyam',
-    role: 'Founder @ Edler Hub',
-    image: './speakers/ghanshyam.jpg',
-    linkedin: 'https://www.linkedin.com/in/ghanashyam/'
-  },
+  
   {
     name: 'Mukesh Kala',
     role: 'Hyper Automation Practice Head - Boundaryless Group, UiPath MVP',

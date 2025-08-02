@@ -91,17 +91,10 @@ const facultyTimelineData: TimelineEvent[] = [
   { time: '12:30 PM', title: 'Lunch Break', icon: Clock, emoji: '🍽️' },
   { 
     time: '14:15', 
-    title: 'Campus to Corporate: Role of tech communities in highlighting job readiness', 
-    speaker: 'Ghanashyam - Founder @ Edler Hub ',
+    title: 'Designing a Community Growth Plan for campuses', 
+    speaker: 'Teena Cobb - Senior HR Executive, qBotica',
     icon: Mic, 
     emoji: '📊',
-  },
-  { 
-    time: '14:35', 
-    title: 'Designing a Community Growth Plan for campuses', 
-    speaker: 'Ghanashyam - Founder @ Edler Hub',
-    icon: Users, 
-    emoji: '🤝',
   },
   { 
     time: '15:20', 
